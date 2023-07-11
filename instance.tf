@@ -36,7 +36,7 @@ resource "aws_instance" "database_instance" {
   provisioner "remote-exec" {
     inline = [
       "sudo apt update",
-      "sudop apt -y install postgresql",
+      "sudo apt -y install postgresql postgresql-contrib",
       "sudo bash ./node_exporter/node_exporter.sh",
     ]
   }
