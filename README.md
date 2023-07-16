@@ -52,7 +52,7 @@ terraform apply
 ```
 
 
-# Result
+# Resultado de apply do terraform
 ```
 Apply complete! Resources: 13 added, 0 changed, 0 destroyed.
 
