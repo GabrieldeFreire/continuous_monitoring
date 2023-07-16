@@ -16,7 +16,7 @@ scrape_configs:
       - targets:
         - localhost:9090
 
-  - job_name: 'node_exporter'
+  - job_name: 'prometheus_grafana_server'
     scrape_interval: 5s
     static_configs:
       - targets:
@@ -28,7 +28,7 @@ scrape_configs:
       - targets:
         - localhost:3000
 
-  - job_name: 'database'
+  - job_name: 'database_server'
     scrape_interval: 5s
     static_configs:
       - targets:
