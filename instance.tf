@@ -1,7 +1,4 @@
 
-# Below resource is to create public key
-# sum by (job) (process_resident_memory_bytes)
-
 resource "aws_instance" "database_instance" {
   ami               = lookup(var.aws_amis, var.aws_region)
   instance_type     = var.aws_instance_type

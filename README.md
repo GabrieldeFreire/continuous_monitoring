@@ -1,10 +1,9 @@
 # Terraform - prometheus - Grafana
-# Provision and deploy the Prometheus and Grafana on AWS using Terraform and Docker.
+# Provisionar e implementar o Prometheus e Grafana na AWS usando Terraform.
 - [Introdução](#Introdução)
 - [Pre-requisitos](#pre-requisitos)
 - [Instalação e configuração](#Instalação-e-configuração)
 - [Result](#Result)
-- [Node Exporter](#Node Exporter)
 
 
 # Introdução
@@ -14,9 +13,7 @@ Testado no ubuntu e linux-wsl2
 # Pre-requisites
 * Certifique-se de instalar a versão mais recente do [terraform](https://learn.hashicorp.com/terraform/getting-started/install.html)
 
-# Instalação e configuração
-Clone o projeto localmente
-
+# Sobre a infraestrutura
 Se você quiser alterar quais alvos devem ser monitorados ou fazer alterações de configuração, edite o arquivo prometheus.yml.
 A seção de alvos é onde você define o que deve ser monitorado pelo Prometheus (por padrão, monitora a própria instancia e a instancia com postgree)
 
@@ -28,8 +25,8 @@ Neste projeto utilizamos as seguintes configurações.
 * Subnet - 10.0.1.0/24
 * Port Opened - 3000, 9090
 
-# Steps to run the provisioning in terraform
-1. Clone the repo
+# Passos para executar o provisionamento no terraform
+1. Clone o repositório
 ```
 git clone https://github.com/GabrieldeFreire/continuous_monitoring
 ```
@@ -61,4 +58,3 @@ Outputs:
 Grafana_URL = http://54.169.85.67:3000
 Prometheus_URL = http://54.169.85.67:9090
 ```
-
